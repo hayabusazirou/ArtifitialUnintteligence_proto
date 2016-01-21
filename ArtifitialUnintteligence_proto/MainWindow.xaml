@@ -38,7 +38,7 @@
         <!-- 対話ログ -->
         <TextBox x:Name="tb_Logure" Grid.Column="1" Grid.Row="1" 
                  ScrollViewer.VerticalScrollBarVisibility="Visible"
-                Text ="{Binding Logure}" IsReadOnly="True" TextWrapping="Wrap"/>
+                Text ="{Binding Logure}" IsReadOnly="True" TextWrapping="Wrap" TextChanged="AddLogure_TextChanged"/>
         <!-- 入力 -->
         <TextBox x:Name="tb_Input" Grid.Column="1" Grid.Row="2"
                  Text="{Binding Input, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
